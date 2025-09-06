@@ -5,12 +5,16 @@
   "main": "vibe.js",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [],
   "author": "Phil Hawksworth <phil@netlify.com>",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0"
-  }
+    "@11ty/eleventy": "^2.0.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
